@@ -1,0 +1,6 @@
+.back{
+    background-image: url('img1.jpg');
+    background-size: cover;
+    height: 100vh;
+    opacity: 0.5;
+}

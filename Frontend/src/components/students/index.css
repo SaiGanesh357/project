@@ -1,0 +1,24 @@
+.flex-items{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main{
+    display: flex;
+    align-items: center;
+}
+.mini{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+.searchBox{
+    padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.search{
+    width:300px;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px rgb(199, 199, 199);
+}
