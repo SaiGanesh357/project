@@ -9,7 +9,7 @@ class Register extends Component {
     event.preventDefault();
     this.setState({ loading: true, message: "" });
 
-    const link = "http://localhost:3001/register";
+    const link = "https://project-a1pl.onrender.com/register";
     const { name, pass } = this.state;
     const details = { username: name, password: pass };
     if(name==="" || pass===""){
