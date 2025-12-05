@@ -15,7 +15,7 @@ class Login extends Component {
     event.preventDefault();
     this.setState({ message: "" });
 
-    const link = "http://localhost:3001/login";
+    const link = "https://project-a1pl.onrender.com/login";
     const { name, pass } = this.state;
     const details = { username: name, password: pass };
     if(name==="" || pass===""){
