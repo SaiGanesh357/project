@@ -32,7 +32,7 @@ export default class Students extends Component {
   fetchStudents = async () => {
     try {
       this.setState({ loading: true, msg: "" });
-      const res = await fetch("http://localhost:3001/students", {
+      const res = await fetch("https://project-a1pl.onrender.com/students", {
         method: "GET",
         headers: this.getAuthHeaders(),
       });
@@ -51,7 +51,7 @@ export default class Students extends Component {
   };
 
   addStudentApi = async (name, roll_number) => {
-    const res = await fetch("http://localhost:3001/add-student", {
+    const res = await fetch("https://project-a1pl.onrender.com/add-student", {
       method: "POST",
       headers: this.getAuthHeaders(),
       body: JSON.stringify({ name, roll_number }),
@@ -64,7 +64,7 @@ export default class Students extends Component {
   };
 
   updateStudentApi = async (id, payload) => {
-    const res = await fetch(`http://localhost:3001/students/${id}`, {
+    const res = await fetch(`https://project-a1pl.onrender.com/students/${id}`, {
       method: "PUT",
       headers: this.getAuthHeaders(),
       body: JSON.stringify(payload),
@@ -77,7 +77,7 @@ export default class Students extends Component {
   };
 
   deleteStudentApi = async (id) => {
-    const res = await fetch(`http://localhost:3001/students/${id}`, {
+    const res = await fetch(`https://project-a1pl.onrender.com/students/${id}`, {
       method: "DELETE",
       headers: this.getAuthHeaders(),
     });
